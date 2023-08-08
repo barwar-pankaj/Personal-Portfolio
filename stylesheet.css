@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    
+}
+body
+{
+    color: #ededed;
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+
+}
+.navbar a{
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+
+}
+.navbar a:hover{
+    color: #0ef;
+}
+.Home{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(images/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.png) no-repeat; 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.Home-content{
+    max-width: 600px;
+}
+.Home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+
+}
+.Home-content h3:nth-last-of-type(2){
+    margin: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-name: .7s;
+}
+.Home-content h3 span{
+    color: #0ef;
+
+}
+.Home-content h1{
+    font-size:  56px; 
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards; 
+    animation-delay: 1s; 
+    
+}
+.Home-content p{
+    font-size: 20px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards ;
+    animation-delay: 1s;
+
+}
+.Home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    transition: .5s;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    margin: 30px 15px 30px 0;
+
+}
+.Home-sci a:hover{
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+.btn-box{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef 
+}
+.btn-box:hover{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan
+    
+}
+/* CSS for About section in index1.html */
+
+.about-section {
+    padding: 80px 10%;
+    background: #081b29;
+  }
+  
+  .about-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #0ef;
+    margin-bottom: 30px;
+  }
+  
+  .about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ededed;
+  }
+  
+  .about-section .info {
+    margin-top: 30px;
+  }
+  
+  .about-section .info h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .about-section .info p {
+    font-size: 16px;
+    color: #ededed;
+    margin-bottom: 20px;
+  }
+  
+  .about-section .info a {
+    color: #0ef;
+    text-decoration: none;
+  }
+  
+  .about-section .info a:hover {
+    text-decoration: underline;
+  }
+  
+  .about-section .skills {
+    margin-top: 30px;
+  }
+  
+  .about-section .skills h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .about-section .skills ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+  }
+  
+  .about-section .skills li {
+    font-size: 16px;
+    color: #ededed;
+    margin-bottom: 5px;
+  }
+  
+  .about-section .skills li:before {
+    content: "\2022";
+    color: #0ef;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  .about-section .contact {
+    margin-top: 30px;
+  }
+  
+  .about-section .contact h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .about-section .contact p {
+    font-size: 16px;
+    color: #ededed;
+    margin-bottom: 20px;
+  }
+  
+  .about-section .contact .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .about-section .contact .contact-info div {
+    margin-right: 20px;
+  }
+  
+  .about-section .contact .contact-info i {
+    font-size: 24px;
+    color: #0ef;
+    margin-right: 10px;
+  }
+  
+  .about-section .contact .contact-info a {
+    color: #ededed;
+    text-decoration: none;
+  }
+  
+  .about-section .contact .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+
+
+
+
+@keyframes slideRight{
+    0%{
+     transform: translateX(-100px);
+     opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+     opacity: 1;
+    }
+}
+@keyframes slideLeft{
+    0%{
+     transform: translateX(100px);
+     opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+     opacity: 1;
+    }
+}
+@keyframes slideTop{
+    0%{
+     transform: translateY(100px);
+     opacity: 0;
+    }
+    100%{
+     transform: translateY(0px);
+     opacity: 1;
+    }
+}
+@keyframes slideBottom{
+    0%{
+     transform: translateY(-100px);
+     opacity: 0;
+    }
+    100%{
+     transform: translateY(0px);
+     opacity: 1;
+    }
+}
